@@ -36,7 +36,6 @@ public:
             else if (i + 2 < len) cur->next = pList[i+2];
             else cur->next = nullptr;
         }
-
         return pList[1];
     }
 };
