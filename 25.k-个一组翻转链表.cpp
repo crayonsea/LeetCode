@@ -36,6 +36,7 @@ public:
             else if (i + k < len) pList[i]->next = pList[i + k];
             else pList[i]->next = nullptr;
         }
+        
         return pList[k-1];
     }
 };
