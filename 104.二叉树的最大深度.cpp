@@ -17,9 +17,14 @@
  * };
  */
 class Solution {
+    int maxdeep(TreeNode *root, int cnt) {
+        if (!root) return cnt;
+        else return max(maxdeep(root->left, cnt + 1), maxdeep(root->right, cnt + 1));
+    }
+
 public:
     int maxDepth(TreeNode* root) {
-
+        return maxdeep(root, 0);
     }
 };
 // @lc code=end
